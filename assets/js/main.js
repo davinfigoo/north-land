@@ -281,9 +281,21 @@ const toggleItem = (item) => {
                 };
 
                 // Listen on bubbling phase
-                el.addEventListener('click', handler);
+                el.addEventListener('click', (e) => {
+                    // EXCLUDE buttons inside from opening lightbox
+                    if (e.target.closest('a') || e.target.classList.contains('packages__button')) {
+                        return; // Let the link work!
+                    }
+                    handler(e);
+                });
+                
                 // Listen on capture phase just in case Swiper or another script stops propagation
-                el.addEventListener('click', handler, true);
+                el.addEventListener('click', (e) => {
+                    if (e.target.closest('a') || e.target.classList.contains('packages__button')) {
+                        return;
+                    }
+                    handler(e);
+                }, true);
             });
         };
 
