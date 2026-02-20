@@ -1,11 +1,22 @@
-# North Land Website
+# North Land Landing Page
 
-Website landing page berbasis HTML, CSS, dan JavaScript.
+Website landing page modern dengan desain responsif.
 
-## Fitur
-- Responsive Design
-- Video Background
-- Modern UI
+## 🚀 Tech Stack
+- HTML5
+- CSS3
+- JavaScript
 
-## Author
+## ✨ Features
+- Responsive layout
+- Video background
+- Smooth navigation
+- Modern UI design
+
+## 📂 Project Structure
+assets/
+index.html
+
+## 👤 Author
 Davin Figo Danendra
+Information Systems Student
